@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.1"
-  }
+  },
+  "name": "write-ify",
+  "description": "A journaling app that plays music to match your mood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
