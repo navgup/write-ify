@@ -6,10 +6,15 @@
   "description": "A journaling app that plays music to match your mood",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage" : "http://navgup.github.io/write-ify",
+  "predeploy" : "npm run build",
+  "deploy" : "gh-pages -d build",
   "keywords": [],
   "author": "",
   "license": "ISC"
