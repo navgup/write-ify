@@ -15,7 +15,7 @@
     "redux": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://navgup.github.io",
+  "homepage": "http://localhost:3000",
   "scripts": {
       "predeploy": "npm run build",
       "deploy": "gh-pages -d build",
