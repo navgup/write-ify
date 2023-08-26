@@ -18,7 +18,7 @@ global access_token
 
 CLIENT_ID = '61f86c15e6b34a75a0ff6d4ed85abcc3'
 CLIENT_SECRET = '5a1c80f5c3f74e10b1fa8330150e4665'
-REDIRECT_URI = 'http://127.0.0.1:5000/callback'
+REDIRECT_URI = 'https://writify-backend.onrender.com/callback'
 
 credentials = f"{CLIENT_ID}:{CLIENT_SECRET}"
 base64_credentials = base64.b64encode(credentials.encode("utf-8")).decode("utf-8")
@@ -27,7 +27,7 @@ headers = {
   "Authorization": f"Basic {base64_credentials}"
 }
 
-app = Flask(__name__)
+application = app = Flask(__name__)
 CORS(app)
 
 app.secret_key = 'kldfsjh2jkl34h52l3h4kldjf23430956dndsfoewrhn'
@@ -80,7 +80,7 @@ def callback():
     top_tracks += top_json2["items"][0]["id"] + ","
     top_tracks += top_json2["items"][1]["id"]
 
-    return redirect("http://localhost:3000/")
+    return redirect("https://writify.onrender.com")
 
 
 emotion_detection = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
