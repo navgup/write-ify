@@ -11,7 +11,7 @@ export const CTA = () => {
 
 const sendText = async (text) => {
   try {
-    const response = await axios.post('http://127.0.0.1:5000/predict', { text });
+    const response = await axios.post('https://navgup.pythonanywhere.com/predict', { text });
     return response.data; 
   } catch (error) {
     console.error('Error processing text:', error);
