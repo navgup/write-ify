@@ -10,7 +10,7 @@ import "./api.css"
 
     const handleLogin = () => {
       // Redirect the user to the Flask endpoint for Spotify authorization
-      window.location.href = 'https://navgup.pythonanywhere.com/login';
+      window.location.href = 'https://writify.azurewebsites.net/login';
     };
   
   
