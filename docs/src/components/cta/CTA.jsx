@@ -11,7 +11,7 @@ export const CTA = () => {
 
 const sendText = async (text) => {
   try {
-    const response = await axios.post('https://navgup.pythonanywhere.com/predict', { text }, {
+    const response = await axios.post('https://writify.azurewebsites.net/predict', { text }, {
       timeout: 300000
     });
     return response.data; 
